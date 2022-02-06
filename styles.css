@@ -1,0 +1,96 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --footer: hsl(228, 45%, 44%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 62.5% = 10px ,do not change*/
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-size: 1.5rem; /* 15px / 0.1 rem = 1px, if the html font size is set to 62.5% */
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Light-gray);
+  text-align: center;
+}
+
+main, article, figure {
+  justify-content: center;
+  align-items: center;
+}
+
+
+figure {
+  background-color: var(--White);
+  flex-direction: column;
+  width: 35rem;
+  margin-top: 10%;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+article {
+  flex-direction: column;
+  width: 30rem;
+  padding: 2rem;
+}
+
+p {
+  margin-top: 1.4rem;
+}
+
+
+img {
+  border-radius: 12px;
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--Dark-blue);
+}
+
+p {
+  font-weight: 400;
+  color: var(--Grayish-blue);
+}
+
+.inline-control {
+  display: flex;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--footer);
+}
+
+@media only screen and (min-width: 375px) {
+  
+}
+
+@media only screen and (min-width: 1440px) {
+
+}
+
